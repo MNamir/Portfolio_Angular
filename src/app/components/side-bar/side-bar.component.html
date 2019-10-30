@@ -1,0 +1,66 @@
+<!-- MOBILE MENU -->
+<div class="mobile_menu">
+  <div class="mob_menu_container">
+    <div class="mob_menu_logo">
+      <a href="#Home">
+        <img src="assets/images/logo-min.png" alt="Hibix Logo"><!-- Here is mobile logo -->
+      </a>
+    </div>
+    <div class="burger_nav">
+      <div id="btn_nav" class="btn_nav">
+        <span class="btn_nav_lines"></span>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="mob_nav" class="mob_nav">
+  <div class="nav"> <!-- Here is mobile menu -->
+    <div class="mobMenu">
+      <a  routerLink="/Home" routerLinkActive="active">Home</a>
+      <a routerLink="/About" routerLinkActive="active">About</a>
+      <a routerLink="/Services" routerLinkActive="active">Services</a>
+      <a routerLink="/Portfolio" routerLinkActive="active">Portfolio</a>
+      <a routerLink="/Contact" routerLinkActive="active">Contact</a>
+      <a routerLink="/All_Menu_items" routerLinkActive="active">All Menu Items</a>
+    </div>
+  </div>
+  <div class="social">
+    <a title="facebook" href="#"><i class="icon-facebook"></i></a>
+    <a title="twitter" href="#"><i class="icon-twitter"></i></a>
+    <a title="linkedin" href="#"><i class="icon-linkedin2"></i></a>
+    <a title="instagram" href="#"><i class="icon-instagram"></i></a>
+    <a title="dribbble" href="#"><i class="icon-dribbble"></i></a>
+  </div>
+</div>
+<!-- /MOBILE MENU -->
+
+<!-- CONTENT -->
+<!-- LEFTPART -->
+<div class="menu" id="Menu">
+  <div class="logo" id="logo">
+    <a href="#">
+      <img src="./../../../assets/images/logo2.png" alt="logo"> <!-- Here is logo -->
+    </a>
+  </div>
+  <div class="nav" id="nav">
+    <ul> <!-- Here is menu -->
+      <li> <a  routerLink="/Home" routerLinkActive="active">Home</a></li>
+      <li><a routerLink="/About" routerLinkActive="active">About</a></li>
+      <li>  <a routerLink="/Services" routerLinkActive="active">Services</a></li>
+      <li> <a routerLink="/Portfolio" routerLinkActive="active">Portfolio</a></li>
+      <li> <a routerLink="/Contact" routerLinkActive="active">Contact</a></li>
+      <li> <a routerLink="/All_Menu_items" routerLinkActive="active">All Menu Items</a></li>
+    </ul>
+  </div>
+  <div class="social" id="social">
+    <a title="facebook" href="#"><i class="icon-facebook"></i></a>
+    <a title="twitter" href="#"><i class="icon-twitter"></i></a>
+    <a title="linkedin" href="#"><i class="icon-linkedin2"></i></a>
+    <a title="instagram" href="#"><i class="icon-instagram"></i></a>
+    <a title="dribbble" href="#"><i class="icon-dribbble"></i></a>
+  </div>
+  <div (click)="menuClose()" class="close__menu" id="close_menu">
+    <i class="icon-arrow-left2"></i>
+  </div>
+</div>
+<!-- /LEFTPART -->
