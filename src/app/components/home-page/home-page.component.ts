@@ -139,4 +139,9 @@ export class HomePageComponent implements OnInit, AfterViewInit {
     );
   }
 
+  modalOpen() {
+  const x = document.getElementById('modal').closest('body');
+  x.classList.toggle('modal-open');
+  }
+
 }

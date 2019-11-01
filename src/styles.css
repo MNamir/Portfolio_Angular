@@ -530,6 +530,7 @@ h6 {
 
 .typing {
   color: #fd7878;
+  z-index: 99;
 }
 
 .typed-cursor {
@@ -1323,13 +1324,71 @@ h6 {
   padding: 0 0 0 10px;
 }
 
+
+.ng-touched {
+  border-color: #ff8900 !important;
+}
+
+.ng-dirty {
+  border-color: #07aacb !important;
+}
+
+.ng-touched.ng-invalid {
+  border-color: red !important;
+}
+
+.contact-form .btn__send button:disabled {
+  opacity: .5;
+  cursor: not-allowed;
+}
+
+.contact-form .btn__send button:disabled:hover:before {
+  left: -100%;
+}
+
+.ng-touched.ng-invalid {
+  border-color: red !important;
+}
+
+.ng-valid {
+  border-color: green !important;
+}
+
+.modal{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+  height: calc(100vh - 200px);
+  width: calc(100vw - 200px);
+  margin: auto;
+  display: none;
+}
+
+.modal:before{
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 98;
+  height: 100%;
+  width: 100%;
+}
+
+.modal-open .modal{
+  display: block;
+}
+
 .contact-form form input {
   width: 100%;
   background: transparent;
   border: none;
   border-bottom: 1px solid #000;
   outline: none;
-
   color: #000;
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;

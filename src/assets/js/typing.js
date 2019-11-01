@@ -1,6 +1,8 @@
 // Header
+const typing = document.getElementByClassName("typing")
+const about_typing = document.getElementByClassName("about_typing")
 
-var typed = new Typed('.typing', {
+var typed = new Typed('typing', {
     strings: ["Mohd Affan", "A Web Developer", "A Freelancer"],
     loop: true,
     typeSpeed: 40,
@@ -11,7 +13,7 @@ var typed = new Typed('.typing', {
 
 //About Me
 
-var typed = new Typed('.about_typing', {
+var typed = new Typed('about_typing', {
     strings: ["Mohd Affan", "A Web Developer", "A Freelancer"],
     loop: true,
     typeSpeed: 40,

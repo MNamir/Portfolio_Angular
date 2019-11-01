@@ -7,7 +7,12 @@ import {AfterViewInit, Component, OnInit} from '@angular/core';
 })
 export class SideBarComponent implements OnInit {
 
-   menuClose() {
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+  menuClose() {
     const close = document.getElementById('close_menu');
     const menu = document.getElementById('Menu');
     const icon = document.querySelector('#close_menu i');
@@ -19,10 +24,12 @@ export class SideBarComponent implements OnInit {
     menu.classList.toggle('Menu_remove');
     content.classList.toggle('header__content__full');
   }
-  constructor() { }
 
-  ngOnInit() {
+  mobMenuOpen() {
+    const mobIcon = document.getElementById('btn_nav');
+    const mobNav = document.getElementById('mob_nav');
+    mobIcon.classList.toggle('btnNavActive');
+    mobNav.classList.toggle('mob_nav_open');
   }
-
 }
 
