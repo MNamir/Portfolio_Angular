@@ -16,6 +16,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { AllMenuItemsComponent } from './components/all-menu-items/all-menu-items.component';
 import {FormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
+import { CustomPopupComponent } from './components/custom-popup/custom-popup.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import {HttpClientModule} from '@angular/common/http';
     SliderComponent,
     ContactComponent,
     FooterComponent,
-    AllMenuItemsComponent
+    AllMenuItemsComponent,
+    CustomPopupComponent
   ],
   imports: [
     BrowserModule,

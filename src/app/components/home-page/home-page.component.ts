@@ -8,7 +8,6 @@ declare const particlesJS;
   styleUrls: ['./home-page.component.css']
 })
 export class HomePageComponent implements OnInit, AfterViewInit {
-
   constructor() { }
 
   ngOnInit() {
@@ -141,7 +140,15 @@ export class HomePageComponent implements OnInit, AfterViewInit {
 
   modalOpen() {
   const x = document.getElementById('modal').closest('body');
-  x.classList.toggle('modal-open');
+  const backDrop = document.createElement('div');
+  backDrop.classList.add('modal-backdrop');
+  x.classList.add('modal-open');
+  x.append(backDrop);
+  backDrop.addEventListener('click', function f() {
+    backDrop.remove();
+    x.classList.remove('modal-open');
+    });
   }
+
 
 }

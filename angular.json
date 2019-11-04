@@ -27,8 +27,7 @@
               "src/styles.css"
             ],
             "scripts": [
-              "src/assets/js/particles.min.js",
-              "src/assets/js/typed.min.js"
+              "src/assets/js/particles.min.js"
             ]
           },
           "configurations": {
