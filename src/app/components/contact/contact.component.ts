@@ -7,19 +7,25 @@ import {NgForm} from '@angular/forms';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit , OnChanges {
-  constructor() { console.log('constructor called'); }
-
+  userMailId = '';
+  userMsg = '';
+  userName = '';
   ngOnInit() {
     console.log('ngoninit called');
   }
 
   ngOnChanges(changes: SimpleChanges)  {
-    console.log(changes, 'ngonchanges called');
   }
 
   onSubmit(f: NgForm) {
   console.log(f.value);
-  console.log(f.valid);
+  }
+  getUserMailId(event: Event) {
+    console.log(event);
+    this.userMailId = ( event.target as HTMLInputElement).value;
+  }
+  getUserMsg() {
+    this.userMsg = (document.getElementById('text_comment') as HTMLInputElement).value;
   }
 }
 

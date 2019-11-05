@@ -1,6 +1,7 @@
 @import "./assets/fonts/style.css";
 @import "./../node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.theme.default.min.css";
 @import "./../node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.carousel.min.css";
+@import "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css";
 
 * {
   box-sizing: border-box;
@@ -1352,6 +1353,18 @@ h6 {
 
 .ng-valid {
   border-color: green !important;
+}
+
+.form-control ~ div{
+  padding: 5px;
+}
+
+.online{
+  color: #ffffff;
+}
+
+.valid-feedback{
+  margin-top: 5px;
 }
 
 .modal{

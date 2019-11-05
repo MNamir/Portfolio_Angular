@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-custom-popup',
+  // tslint:disable-next-line:component-selector
+  selector: ' [app-custom-popup] ',
   templateUrl: './custom-popup.component.html',
   styleUrls: ['./custom-popup.component.css']
 })
 export class CustomPopupComponent implements OnInit {
-
+title = 'I am a custom popup.'
   constructor() { }
 
   ngOnInit() {

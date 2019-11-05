@@ -17,6 +17,7 @@ import { AllMenuItemsComponent } from './components/all-menu-items/all-menu-item
 import {FormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import { CustomPopupComponent } from './components/custom-popup/custom-popup.component';
+import { NgDirectiveUseComponent } from './components/ng-directive-use/ng-directive-use.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { CustomPopupComponent } from './components/custom-popup/custom-popup.com
     ContactComponent,
     FooterComponent,
     AllMenuItemsComponent,
-    CustomPopupComponent
+    CustomPopupComponent,
+    NgDirectiveUseComponent
   ],
   imports: [
     BrowserModule,

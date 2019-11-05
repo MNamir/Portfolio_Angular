@@ -1,0 +1,93 @@
+<div class="container">
+  <h3 class="pt-5">Js Form Validation</h3>
+  <form name="myform"  #f="ngForm">
+    <div class="row" id="form-validation">
+      <div class="col-sm-6 col-12 pb-3">
+        <input
+          type="text"
+          class="form-control"
+          name="firstname"
+          placeholder="First Name"
+          [(ngModel)]="firstName"
+          required
+          ngModel
+        />
+        <div>
+         {{ firstName }}
+        </div>
+      </div>
+      <div class="col-sm-6 col-12 pb-3">
+        <input
+          type="text"
+          class="form-control"
+          name="lastname"
+          placeholder="Last Name"
+          [(ngModel)]="lastName"
+          required
+          ngModel
+        />
+        <div>
+          {{ lastName }}
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-12 pb-3">
+        <input
+          type="email"
+          class="form-control"
+          name="email"
+          placeholder="E-mail"
+          [(ngModel)]="email"
+          required
+          ngModel
+        />
+        <div>
+          {{ email }}
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-12 pb-3">
+        <input
+          type="tel"
+          class="form-control"
+          name="tel"
+          placeholder="Mobile No."
+          [(ngModel)]="mobileNo"
+          required
+          ngModel
+        />
+        <div>
+          {{ mobileNo }}
+        </div>
+      </div>
+    </div>
+    <button
+      type="button"
+      id="btn"
+      class="btn  btn-primary mb-3"
+      (click)="onSubmit()"
+      [disabled]="!f.valid"
+    >
+      Submit
+    </button>
+  </form>
+  <div  *ngFor="let name of cardName">
+  <div class="card mb-3" *ngIf="submitTrigger === true">
+    <div class="card-header" id="headingOne" [ngStyle]="{ backgroundColor: getColor()}" [ngClass]="{online : color === 'active'}">
+      <h2 class="mb-0">
+        {{ storefirstName }} {{ storelastName }}
+      </h2>
+    </div>
+
+    <div id="collapseOne" class="collapse show" >
+      <div class="card-body">
+        <p>My Name is {{ storefirstName }} {{ storelastName }}.</p>
+        <p>My E-mail id is {{ storeemail }}.</p>
+        <p>My Contact No. is {{ storemobileNo }}.</p>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+
+

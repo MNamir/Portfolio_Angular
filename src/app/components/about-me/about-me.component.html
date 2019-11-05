@@ -47,7 +47,7 @@
       </div>
       <div class="btn__aboutMe">
         <a download href="text.txt"><span>Download CV</span></a>
-        <a href="#contact"><span>Send Message</span></a>
+        <a><span>Send Message</span></a>
       </div>
       <button type="button" (click)="onlyOdd= !onlyOdd">Only Odd</button>
       <div class="forloop">
@@ -62,6 +62,9 @@
               {{ even }}
             </li>
           </div>
+          <li *ngFor="let fruits of allFruits" [innerText]="fruits">
+            Affan
+          </li>
         </ul>
       </div>
     </div>

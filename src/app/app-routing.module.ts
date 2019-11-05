@@ -6,6 +6,7 @@ import {ServicesComponent} from './components/services/services.component';
 import {PortfolioComponent} from './components/portfolio/portfolio.component';
 import {ContactComponent} from './components/contact/contact.component';
 import {AllMenuItemsComponent} from './components/all-menu-items/all-menu-items.component';
+import {NgDirectiveUseComponent} from './components/ng-directive-use/ng-directive-use.component';
 
 const routes: Routes = [
   {
@@ -25,6 +26,9 @@ const routes: Routes = [
   },
   {
     path: 'All_Menu_items', component: AllMenuItemsComponent
+  },
+  {
+    path: 'Ng_Directive' , component: NgDirectiveUseComponent
   },
   {
     path: '', redirectTo: 'Home', pathMatch: 'full'
