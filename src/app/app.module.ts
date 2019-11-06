@@ -18,6 +18,7 @@ import {FormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import { CustomPopupComponent } from './components/custom-popup/custom-popup.component';
 import { NgDirectiveUseComponent } from './components/ng-directive-use/ng-directive-use.component';
+import { LoaderComponent } from './components/loader/loader.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { NgDirectiveUseComponent } from './components/ng-directive-use/ng-direct
     FooterComponent,
     AllMenuItemsComponent,
     CustomPopupComponent,
-    NgDirectiveUseComponent
+    NgDirectiveUseComponent,
+    LoaderComponent
   ],
   imports: [
     BrowserModule,

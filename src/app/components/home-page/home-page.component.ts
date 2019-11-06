@@ -1,4 +1,4 @@
-import {AfterViewInit, Component, OnInit} from '@angular/core';
+import {AfterViewInit, Component, HostListener, OnInit} from '@angular/core';
 
 declare const particlesJS;
 
@@ -10,7 +10,7 @@ declare const particlesJS;
 export class HomePageComponent implements OnInit, AfterViewInit {
   constructor() { }
 
-  ngOnInit() {
+ ngOnInit() {
   }
 
   ngAfterViewInit() {
@@ -149,6 +149,16 @@ export class HomePageComponent implements OnInit, AfterViewInit {
     x.classList.remove('modal-open');
     });
   }
-
-
+  @HostListener('window: scroll') onScrollEvent() {
+    const body = document.querySelector('body');
+    const scrollY = window.scrollY;
+    if (scrollY > 100) {
+      body.classList.add('scrolled');
+    } else {
+      body.classList.remove('scrolled');
+    }
+  }
+  @HostListener('mouseover') onmouseover() {
+    // window.alert('Host Element Clicked');
+  }
 }

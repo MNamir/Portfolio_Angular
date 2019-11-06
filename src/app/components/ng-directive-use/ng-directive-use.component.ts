@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, HostListener, OnInit} from '@angular/core';
+import {createHostListener} from '@angular/compiler/src/core';
 
 @Component({
   selector: 'app-ng-directive-use',
@@ -38,7 +39,7 @@ export class NgDirectiveUseComponent implements OnInit {
     this.cardName.push();
   }
   getColor() {
-    console.log(this.color);
     return this.color === 'active' ? 'green' : 'red';
   }
+
 }
