@@ -19,6 +19,10 @@ import {HttpClientModule} from '@angular/common/http';
 import { CustomPopupComponent } from './components/custom-popup/custom-popup.component';
 import { NgDirectiveUseComponent } from './components/ng-directive-use/ng-directive-use.component';
 import { LoaderComponent } from './components/loader/loader.component';
+import { NavigateComponent } from './components/navigate/navigate.component';
+import { NavigatechildfirstComponent } from './components/navigatechildfirst/navigatechildfirst.component';
+import { NavigatechildsecondComponent } from './components/navigatechildsecond/navigatechildsecond.component';
+import { NavigatechildthreeComponent } from './components/navigatechildthree/navigatechildthree.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +38,11 @@ import { LoaderComponent } from './components/loader/loader.component';
     AllMenuItemsComponent,
     CustomPopupComponent,
     NgDirectiveUseComponent,
-    LoaderComponent
+    LoaderComponent,
+    NavigateComponent,
+    NavigatechildfirstComponent,
+    NavigatechildsecondComponent,
+    NavigatechildthreeComponent
   ],
   imports: [
     BrowserModule,
