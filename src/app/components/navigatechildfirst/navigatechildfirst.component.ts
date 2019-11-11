@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navigatechildfirst.component.css']
 })
 export class NavigatechildfirstComponent implements OnInit {
-
+  myVar = '';
   constructor() { }
 
   ngOnInit() {
   }
-
+  selectVal(val) {
+    console.log(val.target.valueOf());
+  }
 }

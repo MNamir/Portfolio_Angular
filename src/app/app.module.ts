@@ -23,6 +23,8 @@ import { NavigateComponent } from './components/navigate/navigate.component';
 import { NavigatechildfirstComponent } from './components/navigatechildfirst/navigatechildfirst.component';
 import { NavigatechildsecondComponent } from './components/navigatechildsecond/navigatechildsecond.component';
 import { NavigatechildthreeComponent } from './components/navigatechildthree/navigatechildthree.component';
+import {DropdownComponent} from './components/dropdown/dropdown.component';
+import {DropdownDirective} from './components/directive/dropdown.directive';
 
 @NgModule({
   declarations: [
@@ -42,7 +44,9 @@ import { NavigatechildthreeComponent } from './components/navigatechildthree/nav
     NavigateComponent,
     NavigatechildfirstComponent,
     NavigatechildsecondComponent,
-    NavigatechildthreeComponent
+    NavigatechildthreeComponent,
+    DropdownComponent,
+    DropdownDirective
   ],
   imports: [
     BrowserModule,
